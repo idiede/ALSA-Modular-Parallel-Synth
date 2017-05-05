@@ -1,0 +1,163 @@
+2009-12-25 Karsten Wiese <fzuuzf@googlemail.com>
+	* src/m_env.cpp: Initialize M_env::e_noteOff[].
+
+2009-10-07 Guido Scholz <guido.scholz@bayernline.de>
+	* src/midiwidget.cpp: MIDI channel numbering changed from 0..15
+	to 1..16.
+
+2009-10-04 Karsten Wiese <fzuuzf@googlemail.com>
+	* src/midiwidget.cpp: Fix crash unbinding multiple controllables
+	connected to the same midi controller by using QPersistentModelIndex.
+
+2009-09-26 Karsten Wiese <fzuuzf@googlemail.com>
+	* src/midiwidget.cpp: Update comments, move one return.
+	* SynthData::getMidiControllerContext(): Tell userinterface
+	"MIDI event happened", if (midiWidget->isVisible()).
+
+2009-08-14 Guido Scholz <guido.scholz@bayernline.de>
+	* src/midiwidget.cpp: Update selection in MIDI controller view,
+	if MIDI event of an already listed controller arrives.
+
+2009-09-05 Frank Neumann <beachnase@web.de>
+	* configure.ac: Compiler optimization for arch x86_64 added.
+
+2009-08-12 Guido Scholz <guido.scholz@bayernline.de>
+	* src/modules.cpp: Compile error for Qt 4.2 fixed, caused by
+	missing QPainterPath header.
+
++++ Release 2.0.0 (2009-06-15) +++
+
+2009-06-12 Karsten Wiese <fzuuzf@googlemail.com>
+	* main.cpp, modularsynth.cpp, modularsynth.h, msoptions.h:
+	  -v "verbose" command line option.
+	* configure.ac: bump VERSION to "2.0.0".
+
+2009-06-09 Karsten Wiese <fzuuzf@googlemail.com>
+	* m_midiout.cpp, m_scope.cpp, m_wavout.cpp, module.cpp, synthdata.cpp:
+	  Fix crash on switching presets containing M_wavout or M_scope
+	  modules.
+	* configure.ac: bump VERSION to "2.0.0-rc2".
+
+2009-05-25 Karsten Wiese <fzuuzf@googlemail.com>
+	* MainWindow::closeEvent():
+	  Call modularSynth->clearConfig(); to fix crash when quitting.
+
+2009-05-19 Karsten Wiese <fzuuzf@googlemail.com>
+	* ModularSynth::mousePressEvent():
+	  Fix newBoxPos and popup position. Style.
+
+2009-05-18 Karsten Wiese <fzuuzf@googlemail.com>
+	* M_pcmout: Fix noise after disconnection.
+	* Module deletion fixed to allow midibound activity also for
+	  unconnected modules. 
+	* M_type_pcmout deletion fixed to avoid crash.
+
+2009-05-17 Karsten Wiese <fzuuzf@googlemail.com>
+	* cmdline options: reenable -j and -a.
+	* legato mode: Make "All notes off" also clear the notelist.
+	* ISMIDI is the correct tag for an intMidiSlider,
+	  fix incorrectly saved as FSMIDI midibindings.
+
+2009-05-16 Guido Scholz <guido.scholz@bayernline.de>
+	* man/ams.1: New command line options added.
+	* configure.ac: bump VERSION down to "2.0.0-rc1".
+
+2009-05-16 Karsten Wiese <fzuuzf@googlemail.com>
+	* call jack_client_open() instead of deprecated jack_client_new().
+	* legato in monophonic mode by Atte Andre Jensen.
+	* Doing console io from rt thread can cause harm to ears and speakers.
+	  Defer unsupported midi messages warnings to userinterface.
+	* Fix 2 bugs in ModularSynth that caused accessviolation on exit
+	  and wrong box placement in Parameter View.
+	* Call guiWidget->close(), prefWidget->close() and  midiWidget->close()
+	  from ModularSynth::dtor to let process finish on Mainwindow closing
+	  also if any of those widgets is shown.
+	* Reenable polyphonic mode. Fix by Atte Andre Jensen.
+	* MainWindow::updateWindowTitle(): Use synthdata->name instead of
+	  APPNAME to match MIDI and Jack names.
+	* Rework commandline options. Started by Atte Andre Jensen. Tweaked to
+	  resemble Fons Adriaensen's programs.
+	* configure.ac: bump VERSION to "2.0.1-rc1".
+	
+2009-03-02 Karsten Wiese <fzuuzf@googlemail.com>
+	* midiwidget.*: Fix crash if second controller is about to show
+	after 1st controller is bound to controllable.
+	* modularsynth.cpp: Cosmetics showing style I'd like other developers
+	to follow.....
+
+2009-02-24 Karsten Wiese <fzuuzf@googlemail.com>
+	* prefwidget.*, modularsynth.*: Boxes can be moved past the
+	topleft canvas border. Behaviour selectable via new tab in
+	prefwidget.
+	* modularsynth.*: Fix QObject's complaint about deleting while
+	in event-handler by using deleteLater().
+
+2009-02-21 Guido Scholz <guido.scholz@bayernline.de>
+	* guiwidget.*, modularsynth.cpp: Saving of parameter view
+	settings reorganized, reading of float slider parameters
+	enabled.
+	* guiwidget.*: Inherit parameter view widget from QDialog to
+	create a proper window decoration.
+	* configdialog.*: Inherit module config dialog from QDialog to
+	create a proper window decoration.
+	* modularsynth.cpp: Append suffix to color scheme files if not
+	given by user.
+
+2009-02-18 Guido Scholz <guido.scholz@bayernline.de>
+	* colorwidget.*, prefwidget.cpp: Color widget class moved to
+	separate file, missing Q_OBJECT macro added.
+	* prefwidget.*, modularsynth.*: Unused code removed.
+
+2008-11-09 Frank Kober <goemusic@yahoo.fr>
+	* ams_fr.ts: French translation added.
+
+2008-09-02 Guido Scholz <guido.scholz@bayernline.de>
+	* configure.ac: Removed obsolete assignments to LIBS variable.
+	* port.h, module.cpp: Port direction is private now.
+
+2008-08-30 Guido Scholz <guido.scholz@bayernline.de>
+	* modularsynth.cpp: Prevent double inport connection. Beep
+	instead of error message if user tries wrong connection. Fix
+	resorting of recently opened files list.
+
+2008-08-29 Guido Scholz <guido.scholz@bayernline.de>
+	* modularsynth.*, module.*, port.*: List of ports now is private
+	to module, port selection rewritten.
+
+2008-08-27 Guido Scholz <guido.scholz@bayernline.de>
+	* synthdata.*: Fixed crash caused by Alsa SND_SEQ_EVENT_SYSEX
+	events.
+	* midicontrollerlist.*: Empty files removed.
+	* midicontroller.*: Possible fix for broken MIDI event type
+	transformation if type values are > 127 (changed "int" to
+	"unsigned int"). Untested.
+	* modularsynth.cpp: Application name added to MIDI in/out port
+	name.
+
+2008-08-17 Guido Scholz <guido.scholz@bayernline.de>
+	* INSTALL: File replaced by generic file which comes with the
+	autotools set.
+
+2008-07-27 Guido Scholz <guido.scholz@bayernline.de>
+	* whole package: Sourcecode files moved to new src subdirectory
+	and newly developed autotools framework added.
+	* man/ams.1: Lost man page added.
+
+2008-07-15 Guido Scholz <guido.scholz@bayernline.de>
+	* mainwindow.cpp, modularsynth.cpp: Menu for recently opened
+	files added.
+	* *.cpp, ams_de.ts: Most strings are made translatable and a
+	German translation is added. Keyboard shortcuts added, where
+	ever possible.
+
+2008-07-12 Guido Scholz <guido.scholz@bayernline.de>
+	* main.cpp: Support for Qt library translations added.
+	* mainwindow.cpp: Application icon added.
+
+2008-07-09 Guido Scholz <guido.scholz@bayernline.de>
+	* main.cpp, mainwindow.*, modularsynth.*: "File save as" function
+	implemented.
+
+2008-06-17 Guido Scholz <guido.scholz@bayernline.de>
+	* ringbuffer.h: Adapt atomic operations to new Qt 4.4 interface
+
