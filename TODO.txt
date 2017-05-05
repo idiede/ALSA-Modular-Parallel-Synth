@@ -1,2 +1,0 @@
-Find and relace AMS_MONO_LONGNAME and SHORTNAME
-remane .amps as .vamps or when finished rename all vamps as amps*
