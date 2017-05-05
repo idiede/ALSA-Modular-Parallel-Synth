@@ -1,0 +1,159 @@
+
+Too make any changes to file this must be done !!!
+
+If you start with a fresh cvs checkout, please first apply
+
+  autoreconf -i
+  
+  
+ Objects used for amps-0.0.1 m_mcv, m_seq(8), m_env, m_vco, m_vcf, m_vca, m_delay, 
+ m_pcmout
+ 
+ 
+ 
+ #Removed for minimal build	src/makefile.am	
+    #ladspadialog.cpp \
+    #m_ad.cpp \
+    #m_advenv.cpp \
+	
+	#m_amp.cpp \
+	#m_conv.cpp \
+	#m_cvs.cpp \
+	#m_dynamicwaves.cpp \
+	#m_function.cpp \
+	#m_inv.cpp \
+	#m_ladspa.cpp \
+	#m_midiout.cpp \
+	#m_mix.cpp \
+	#m_mphlfo.cpp \
+	#m_noise2.cpp \
+	#m_pcmin.cpp \
+	#m_quantizer.cpp \
+	#m_ringmod.cpp \
+	#m_scmcv.cpp \
+	#m_scope.cpp \
+	#m_scquantizer.cpp \
+	
+	#m_slew.cpp \
+	#m_spectrum.cpp \
+	#m_stereomix.cpp \
+    #m_vcdoubledecay.cpp \
+	#m_vcenv.cpp \
+	#m_vcenv2.cpp \
+    #m_vco2.cpp \
+	#m_vcorgan.cpp \
+	#m_vcpanning.cpp \
+	#m_vcswitch.cpp \
+	#m_vquant.cpp \
+	#m_wavout.cpp \
+	#multi_envelope.cpp \
+	#scopescreen.cpp 
+	
+	
+	
+	###Removed for minimal build	
+    #ladspadialog_moc.cpp \
+	#m_ad_moc.cpp \
+	#m_advenv_moc.cpp \
+	
+	#m_amp_moc.cpp \
+	#m_conv_moc.cpp \
+	#m_cvs_moc.cpp \
+    #m_dynamicwaves_moc.cpp \
+    #m_function_moc.cpp \
+	#m_inv_moc.cpp \
+	#m_ladspa_moc.cpp \
+	#m_midiout_moc.cpp \
+	#m_mix_moc.cpp \
+	#m_mphlfo_moc.cpp \
+	#m_noise2_moc.cpp \
+	#m_pcmin_moc.cpp \
+	#m_quantizer_moc.cpp \
+	#m_ringmod_moc.cpp \
+	#m_scope_moc.cpp \
+	#m_scquantizer_moc.cpp \
+	#m_scmcv_moc.cpp \
+	
+	#m_slew_moc.cpp \
+	#m_spectrum_moc.cpp \
+	#m_stereomix_moc.cpp \
+	#m_vcdoubledecay_moc.cpp \
+	#m_vcenv_moc.cpp \
+	#m_vcenv2_moc.cpp \
+	#m_vco2_moc.cpp \
+	#m_vcorgan_moc.cpp \
+	#m_vcpanning_moc.cpp \
+	#m_vcswitch_moc.cpp \
+	#m_vquant_moc.cpp \
+	#m_wavout_moc.cpp \
+	#multi_envelope_moc.cpp \
+	#scopescreen_moc.cpp 
+	
+	
+	
+	###Removed for minimal build		
+    #ladspadialog.h \
+	#m_ad.h \
+	#m_advenv.h \
+	#m_advmcv.h \
+	#m_amp.h \
+	#m_conv.h \
+	#m_cvs.h \
+	#m_dynamicwaves.h \
+	#m_function.h \
+	#m_inv.h \
+	#m_ladspa.h \
+	#m_midiout.h \
+	#m_mix.h \
+	#m_mphlfo.h \
+	#m_noise2.h \
+	#m_pcmin.h \
+	#m_pcmout.h \
+	#m_quantizer.h \
+	#m_ringmod.h \
+	#m_scmcv.h \
+	#m_scope.h \
+	#m_scquantizer.h \
+	
+	#m_slew.h \
+	#m_spectrum.h \
+	#m_stereomix.h \
+	#m_vcdoubledecay.h \
+	#m_vcenv.h \
+	#m_vcenv2.h \
+	#m_vco2.h \
+	#m_vcorgan.h \
+	#m_vcpanning.h \
+	#m_vcswitch.h \
+	#m_vquant.h \
+	#m_wavout.h \
+	#multi_envelope.h \
+	#scopescreen.h \
+	#spectrumscreen.h
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	taken from configure.ac -> line 133
+	
+	# Check for ladspa plugins path
+AC_ARG_WITH(ladspa-path,
+  [AC_HELP_STRING([--with-ladspa-path=DIR],
+    [directory for ladspa plugins])],
+  [ if test "x$withval" != "x" ; then
+     LADSPA_PATH="$withval"
+    fi ],
+  [LADSPA_PATH="/usr/lib/ladspa:/usr/local/lib/ladspa"])
+AC_SUBST(LADSPA_PATH)
+	 
