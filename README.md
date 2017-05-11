@@ -5,8 +5,8 @@
 - This version parallelizes the callgraph of each individual voice of the AMS.
 The C++ std::futures library has been used to execute the parallel paths. 
 Initial tests show that this version out performs the other versions. See: http://spectrum.library.concordia.ca/980575/ 
-- Future work will be to implement a lock-free queue and add more modules
+- Future work will be to implement a lock-free queue and add more modules.
 For now however proof of concept has been completed.
 - Installation is the same as the AMS but the C++ 2011 Library is required. Follow the README in the source_code folder and the INSTALL file for instructions on how to install.
 - To run in the console type: vamps -J -p 4 -t 1
-- AMPS will only run with Jack Audio, '-p' is the number of voices and '-t' represents the number of threads running in the thread pool (to be implemented in future releases)
+- AMPS will only run with Jack Audio, '-p' is the number of voices and '-t' represents the number of threads running in the thread pool.
