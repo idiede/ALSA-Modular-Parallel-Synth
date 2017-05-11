@@ -76,7 +76,7 @@ HEADERS += box.h \
          
            m_env.h \
     
-           
+           m_fsin.h \
            m_lfo.h \
            m_mcv.h \
            
@@ -170,7 +170,7 @@ SOURCES += box.cpp \
         
            m_env.cpp \
  
-           
+           m_fsin.cpp \
            m_lfo.cpp \
            m_mcv.cpp \
           

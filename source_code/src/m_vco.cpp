@@ -77,13 +77,13 @@ M_vco::M_vco(QWidget* parent)
 
 }
 
-void M_vco::generateCycle(int v) {
+void M_vco::generateCycle(int voice_index) {
 
 	int l1, phint;
 	unsigned int l2;
 	float dphi, phi1, phi_const, pw, d, dd, dsaw, half_wave, third_wave;
 	float freq_const, freq_tune, gain_linfm,  pw_low, pw_high;
-    int voice = v;
+    int voice = voice_index;
 
 	edge = 0.01f + 1.8f * synthdata->edge;
 

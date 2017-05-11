@@ -24,6 +24,7 @@ nodist_vamps_SOURCES = \
 	m_vca_moc.cpp \
 	m_vcf_moc.cpp \
 	m_vco_moc.cpp \
+	m_fsin_moc.cpp \
 	m_inv_moc.cpp \
 	mainwindow_moc.cpp \
 	midicheckbox_moc.cpp \
@@ -65,6 +66,7 @@ vamps_SOURCES = \
 	m_vca.cpp \
 	m_vcf.cpp \
 	m_vco.cpp \
+	m_fsin.cpp \
 	m_inv.cpp \
 	main.cpp \
 	mainwindow.cpp \
@@ -114,6 +116,7 @@ noinst_HEADERS = \
 	m_vca.h \
 	m_vcf.h \
 	m_vco.h \
+	m_fsin.h \
 	m_inv.h \
 	macros.h \
 	main.h \

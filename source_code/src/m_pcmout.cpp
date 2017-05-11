@@ -120,6 +120,7 @@ void M_pcmout::generateCycle(int v)
 	for(int j=0; j<synthdata->poly; j = j+synthdata->blocksize){
 		std::function<float**()> task = std::bind(&Port::getinputdata, &*next, j);
 		futures_vector[l5] = pool->run_task(task);
+		//futures_vector[l5] = std::async(std::launch::async, task);
 		l5++;
 	}
 

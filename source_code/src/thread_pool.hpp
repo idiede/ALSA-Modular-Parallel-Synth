@@ -14,6 +14,7 @@
 //#include <boost/lockfree/queue.hpp>
 //#include <boost/lockfree/spsc_queue.hpp>
 
+
 #include <memory>
 #include <queue>
 #include <thread>
@@ -29,6 +30,9 @@ class thread_pool {
 
  //boost::lockfree::queue<std::packaged_task<float**(port_ptr) >> lfqueue;//(128);
  thread_safe_queue<std::packaged_task<float**() >> lfqueue;
+	// join_threads joiner;
+ //spsc_queue<p_module_ptr> sp_queue;
+
  std::atomic_bool done;
 
  std::vector<std::thread> threads;
@@ -69,12 +73,12 @@ public:
 
 thread_pool(unsigned int t):
 
-	    lfqueue(),
+	  //  lfqueue(),
 	    done(false),
     //	joiner(threads),
-    	 thread_count(t)
+    	 thread_count(t),
       //  ts_queue(),
-       // sp_queue()
+          sp_queue()
 
     {
        // unsigned const thread_count=2;

@@ -34,8 +34,9 @@
 #include "m_vco.h"
 #include "m_vca.h"
 //#include "m_delay.h"
+#include "m_fsin.h"
 #include "m_env.h"
-//#include "m_ede.h"
+
 #include "m_mcv.h"
 #include "m_pcmout.h"
 #include "m_pcmin.h"
@@ -816,6 +817,13 @@ void ModularSynth::newM_ringmod() {
         initNewModule(m);
 }
 
+void ModularSynth::newM_fsin() {
+
+    M_fsin *m = new M_fsin(this);
+    if (m != NULL)
+        initNewModule(m);
+}
+
 void ModularSynth::newM_inv() {
 
     M_inv *m = new M_inv(this);
@@ -1387,7 +1395,9 @@ void ModularSynth::load(QTextStream& ts)
           case M_type_ringmod: 
               newM_ringmod();
               break;
-
+          case M_type_fsin:
+                        newM_fsin();
+                        break;
           case M_type_inv: 
               newM_inv();
               break;

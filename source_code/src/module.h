@@ -44,6 +44,7 @@ enum M_typeEnum {
   M_type_env,
   M_type_ede,
   M_type_seq,
+  M_type_fsin,
   M_type_inv,
   M_type_noise,
   //M_type_slew,

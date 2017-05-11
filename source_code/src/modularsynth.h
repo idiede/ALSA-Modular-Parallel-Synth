@@ -149,6 +149,7 @@ public:
     void newM_noise();
     //void newM_noise2();
     void newM_ringmod();
+    void newM_fsin();
     void newM_inv();
     //void newM_amp();
     //void newM_ad_2();

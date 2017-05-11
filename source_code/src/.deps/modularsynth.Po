@@ -374,8 +374,8 @@ modularsynth.o: modularsynth.cpp /usr/include/stdc-predef.h \
  /usr/include/qt4/QtGui/QHBoxLayout /usr/include/qt4/QtGui/QRadioButton \
  /usr/include/qt4/QtGui/qradiobutton.h /usr/include/qt4/QtGui/QSpinBox \
  /usr/include/qt4/QtGui/qspinbox.h /usr/include/qt4/QtGui/QTabWidget \
- /usr/include/qt4/QtGui/qtabwidget.h textedit.h m_vco.h m_vca.h m_env.h \
- m_mcv.h m_pcmout.h m_pcmin.h m_lfo.h m_noise.h m_seq.h m_vcf.h \
+ /usr/include/qt4/QtGui/qtabwidget.h textedit.h m_vco.h m_vca.h m_fsin.h \
+ m_env.h m_mcv.h m_pcmout.h m_pcmin.h m_lfo.h m_noise.h m_seq.h m_vcf.h \
  prefwidget.h /usr/include/qt4/QtGui/qcombobox.h \
  /usr/include/qt4/QtCore/qfile.h config.h m_advmcv.h m_ringmod.h m_mix.h \
  m_inv.h m_sh.h
@@ -1499,6 +1499,8 @@ textedit.h:
 m_vco.h:
 
 m_vca.h:
+
+m_fsin.h:
 
 m_env.h:
 

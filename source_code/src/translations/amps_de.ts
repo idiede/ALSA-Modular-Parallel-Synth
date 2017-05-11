@@ -217,6 +217,69 @@
     </message>
 </context>
 <context>
+    <name>M_fsin</name>
+    <message>
+        <location filename="../m_fsin.cpp" line="29"/>
+        <source>Fast Sine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="55"/>
+        <source>Freq</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="56"/>
+        <source>Exp. FM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="57"/>
+        <source>Lin. FM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="62"/>
+        <source>Frequency</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="63"/>
+        <source>Octave</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="64"/>
+        <source>Tune</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="65"/>
+        <source>Harmonic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="66"/>
+        <source>Subharmonic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="68"/>
+        <source>Modulation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="69"/>
+        <source>Exp. FM Gain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../m_fsin.cpp" line="70"/>
+        <source>Lin. FM Gain</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>M_function</name>
     <message>
         <source>Function</source>
@@ -1007,132 +1070,137 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="110"/>
+        <location filename="../mainwindow.cpp" line="111"/>
         <source>INV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="113"/>
+        <location filename="../mainwindow.cpp" line="114"/>
         <source>Mixer 2 -&gt; 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="114"/>
+        <location filename="../mainwindow.cpp" line="115"/>
         <source>Mixer 4 -&gt; 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="115"/>
+        <location filename="../mainwindow.cpp" line="116"/>
         <source>Mixer 8 -&gt; 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="123"/>
+        <location filename="../mainwindow.cpp" line="124"/>
         <source>Ring Modulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="124"/>
+        <location filename="../mainwindow.cpp" line="125"/>
         <source>Sample &amp;&amp; Hold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="157"/>
+        <location filename="../mainwindow.cpp" line="158"/>
         <source>&amp;Control Center...</source>
         <translation>&amp;Kontrollzentrum...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="159"/>
+        <location filename="../mainwindow.cpp" line="160"/>
         <source>&amp;Parameter View...</source>
         <translation>&amp;Parameteransicht...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="161"/>
+        <location filename="../mainwindow.cpp" line="162"/>
         <source>Pre&amp;ferences...</source>
         <translation>&amp;Einstellungen...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="164"/>
+        <location filename="../mainwindow.cpp" line="165"/>
         <source>&amp;About AlsaModularSynth...</source>
         <translation>&amp;Über AlsaModularSynth...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="250"/>
         <source>Unnamed file was changed.
 Save changes?</source>
         <translation>Die unbenannte Datei wurde geändert.
 Änderungen speichern?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>File &apos;%1&apos; was changed.
 Save changes?</source>
         <translation>Die Datei &apos;%1&apos; wurde geändert.
 Änderungen speichern?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Save changes</source>
         <translation>Änderungen speichern</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="256"/>
         <source>&amp;Yes</source>
         <translation>&amp;Ja</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="256"/>
         <source>&amp;No</source>
         <translation>&amp;Nein</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="256"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>Open patch file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
-        <location filename="../mainwindow.cpp" line="373"/>
+        <location filename="../mainwindow.cpp" line="264"/>
+        <location filename="../mainwindow.cpp" line="374"/>
         <source>Patch files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="325"/>
         <source>Could not read file &apos;%1&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="355"/>
+        <location filename="../mainwindow.cpp" line="356"/>
         <source>Could not open file &apos;%1&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="373"/>
         <source>Save patch file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="387"/>
         <source>Saving aborted</source>
         <translation>Speichern abgebrochen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>noname</source>
         <translation>unbenannt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="166"/>
+        <location filename="../mainwindow.cpp" line="167"/>
         <source>About &amp;Qt...</source>
         <translation>Über &amp;Qt...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="110"/>
+        <source>Fast SIne</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="412"/>
         <source>About Qt</source>
         <translation>Über Qt</translation>
     </message>
@@ -1276,22 +1344,22 @@ Save changes?</source>
 <context>
     <name>ModularSynth</name>
     <message>
-        <location filename="../modularsynth.cpp" line="124"/>
+        <location filename="../modularsynth.cpp" line="125"/>
         <source>AlsaModularSynth Control Center</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="128"/>
+        <location filename="../modularsynth.cpp" line="129"/>
         <source>AlsaModularSynth Parameter View</source>
         <translation>AlsaModularSynth Parameteransicht</translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="132"/>
+        <location filename="../modularsynth.cpp" line="133"/>
         <source>AlsaModularSynth Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1165"/>
+        <location filename="../modularsynth.cpp" line="1173"/>
         <source>Load Colors</source>
         <translation>Farben lasen</translation>
     </message>
@@ -1300,38 +1368,38 @@ Save changes?</source>
         <translation type="obsolete">Farbschemadateien (*.acs)</translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1173"/>
+        <location filename="../modularsynth.cpp" line="1181"/>
         <source>Could not open file.</source>
         <translation>Konnte Datei nicht öffnen.</translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1207"/>
+        <location filename="../modularsynth.cpp" line="1215"/>
         <source>Save Colors</source>
         <translation>Farben speichern</translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1219"/>
+        <location filename="../modularsynth.cpp" line="1227"/>
         <source>Could not save file.</source>
         <translation>Konnte Datei nicht speichern.</translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1788"/>
+        <location filename="../modularsynth.cpp" line="1798"/>
         <source>Unknown MIDI controller tag found: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="321"/>
+        <location filename="../modularsynth.cpp" line="322"/>
         <source>About </source>
         <translation>Über </translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1531"/>
+        <location filename="../modularsynth.cpp" line="1541"/>
         <source>Input port %1 of module %2 is already connected. New connection to module %3 ignored.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1166"/>
-        <location filename="../modularsynth.cpp" line="1208"/>
+        <location filename="../modularsynth.cpp" line="1174"/>
+        <location filename="../modularsynth.cpp" line="1216"/>
         <source>AlsaModularSynth Color files</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1556,37 +1624,37 @@ Save changes?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="192"/>
+        <location filename="../mainwindow.cpp" line="193"/>
         <source>Preset path now %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="199"/>
+        <location filename="../mainwindow.cpp" line="200"/>
         <source>Loading preset %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="391"/>
+        <location filename="../modularsynth.cpp" line="392"/>
         <source>Error opening ALSA sequencer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="401"/>
+        <location filename="../modularsynth.cpp" line="402"/>
         <source>Error creating sequencer write port.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="410"/>
+        <location filename="../modularsynth.cpp" line="411"/>
         <source>Error creating sequencer read port.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="627"/>
+        <location filename="../modularsynth.cpp" line="628"/>
         <source>All available output ports are in use</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="661"/>
+        <location filename="../modularsynth.cpp" line="662"/>
         <source>All available input ports are in use</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1595,27 +1663,27 @@ Save changes?</source>
         <translation type="obsolete">Keine Verbindung möglich.</translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1824"/>
+        <location filename="../modularsynth.cpp" line="1834"/>
         <source>No title for tab &apos;%1&apos; found.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1840"/>
+        <location filename="../modularsynth.cpp" line="1850"/>
         <source>No data for frame &apos;%1&apos; found.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1855"/>
+        <location filename="../modularsynth.cpp" line="1865"/>
         <source>No parameter values found.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1864"/>
+        <location filename="../modularsynth.cpp" line="1874"/>
         <source>No parameter name &apos;%1&apos; found.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="1930"/>
+        <location filename="../modularsynth.cpp" line="1940"/>
         <source>No name for preset &apos;%1&apos; found.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1660,17 +1728,17 @@ Save changes?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
+        <location filename="../mainwindow.cpp" line="213"/>
         <source>Closing synthesizer...</source>
         <translation>Schließe Synthesizer...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="218"/>
+        <location filename="../mainwindow.cpp" line="219"/>
         <source>Could not unlock preferences file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../modularsynth.cpp" line="301"/>
+        <location filename="../modularsynth.cpp" line="302"/>
         <source>Alsa MIDI wont work!</source>
         <translation type="unfinished"></translation>
     </message>

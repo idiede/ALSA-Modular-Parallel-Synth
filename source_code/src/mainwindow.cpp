@@ -107,6 +107,7 @@ MainWindow::MainWindow(const ModularSynthOptions& mso)
   //newModulePopup->addAction(tr("Function 1 --> 1"), modularSynth, SLOT(newM_function_1()));
   //newModulePopup->addAction(tr("Function 1 --> 2"), modularSynth, SLOT(newM_function_2()));
   //newModulePopup->addAction(tr("Function 1 --> 4"), modularSynth, SLOT(newM_function_4()));
+  newModulePopup->addAction(tr("Fast SIne"), modularSynth, SLOT(newM_fsin()));
   newModulePopup->addAction(tr("INV"), modularSynth, SLOT(newM_inv()));
 
   //newModulePopup->addAction(tr("MIDI Out"), modularSynth, SLOT(newM_midiout()));

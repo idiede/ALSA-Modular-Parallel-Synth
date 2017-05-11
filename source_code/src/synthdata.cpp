@@ -613,7 +613,8 @@ int SynthData::jack_callback(jack_nframes_t nframes)
 
 	clock_gettime(CLOCK_REALTIME, &time2);//end
 
-	data_file << timer->diff(time1,time2).tv_nsec<<"..:.."<< std::endl;//write to file
+	data_file << timer->diff(time1,time2).tv_nsec << std::endl;//write to file
+
       } else
 	for (j = 0; j < 2; j++) {
 	  void *p = jack_port_get_buffer(jack_out [i + j], nframes);

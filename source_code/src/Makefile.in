@@ -115,15 +115,16 @@ am_vamps_OBJECTS = box.$(OBJEXT) canvas.$(OBJEXT) \
 	m_mix.$(OBJEXT) m_noise.$(OBJEXT) m_pcmout.$(OBJEXT) \
 	m_pcmin.$(OBJEXT) m_ringmod.$(OBJEXT) m_seq.$(OBJEXT) \
 	m_sh.$(OBJEXT) m_vca.$(OBJEXT) m_vcf.$(OBJEXT) m_vco.$(OBJEXT) \
-	m_inv.$(OBJEXT) main.$(OBJEXT) mainwindow.$(OBJEXT) \
-	mced.$(OBJEXT) midicheckbox.$(OBJEXT) midicombobox.$(OBJEXT) \
-	midicontrollable.$(OBJEXT) midicontroller.$(OBJEXT) \
-	midiguicomponent.$(OBJEXT) midipushbutton.$(OBJEXT) \
-	midislider.$(OBJEXT) midisliderbase.$(OBJEXT) \
-	midiwidget.$(OBJEXT) modularsynth.$(OBJEXT) module.$(OBJEXT) \
-	port.$(OBJEXT) port_popup.$(OBJEXT) prefwidget.$(OBJEXT) \
-	synthdata.$(OBJEXT) textedit.$(OBJEXT) notelist.$(OBJEXT) \
-	getclocktimer.$(OBJEXT) voice.$(OBJEXT)
+	m_fsin.$(OBJEXT) m_inv.$(OBJEXT) main.$(OBJEXT) \
+	mainwindow.$(OBJEXT) mced.$(OBJEXT) midicheckbox.$(OBJEXT) \
+	midicombobox.$(OBJEXT) midicontrollable.$(OBJEXT) \
+	midicontroller.$(OBJEXT) midiguicomponent.$(OBJEXT) \
+	midipushbutton.$(OBJEXT) midislider.$(OBJEXT) \
+	midisliderbase.$(OBJEXT) midiwidget.$(OBJEXT) \
+	modularsynth.$(OBJEXT) module.$(OBJEXT) port.$(OBJEXT) \
+	port_popup.$(OBJEXT) prefwidget.$(OBJEXT) synthdata.$(OBJEXT) \
+	textedit.$(OBJEXT) notelist.$(OBJEXT) getclocktimer.$(OBJEXT) \
+	voice.$(OBJEXT)
 nodist_vamps_OBJECTS = box_moc.$(OBJEXT) canvas_moc.$(OBJEXT) \
 	colorwidget_moc.$(OBJEXT) configdialog_moc.$(OBJEXT) \
 	function_moc.$(OBJEXT) guiwidget_moc.$(OBJEXT) \
@@ -132,14 +133,14 @@ nodist_vamps_OBJECTS = box_moc.$(OBJEXT) canvas_moc.$(OBJEXT) \
 	m_pcmout_moc.$(OBJEXT) m_pcmin_moc.$(OBJEXT) \
 	m_ringmod_moc.$(OBJEXT) m_seq_moc.$(OBJEXT) m_sh_moc.$(OBJEXT) \
 	m_vca_moc.$(OBJEXT) m_vcf_moc.$(OBJEXT) m_vco_moc.$(OBJEXT) \
-	m_inv_moc.$(OBJEXT) mainwindow_moc.$(OBJEXT) \
-	midicheckbox_moc.$(OBJEXT) midicombobox_moc.$(OBJEXT) \
-	midicontrollable_moc.$(OBJEXT) midiguicomponent_moc.$(OBJEXT) \
-	midipushbutton_moc.$(OBJEXT) midisliderbase_moc.$(OBJEXT) \
-	midiwidget_moc.$(OBJEXT) modularsynth_moc.$(OBJEXT) \
-	module_moc.$(OBJEXT) port_moc.$(OBJEXT) \
-	port_popup_moc.$(OBJEXT) prefwidget_moc.$(OBJEXT) \
-	textedit_moc.$(OBJEXT)
+	m_fsin_moc.$(OBJEXT) m_inv_moc.$(OBJEXT) \
+	mainwindow_moc.$(OBJEXT) midicheckbox_moc.$(OBJEXT) \
+	midicombobox_moc.$(OBJEXT) midicontrollable_moc.$(OBJEXT) \
+	midiguicomponent_moc.$(OBJEXT) midipushbutton_moc.$(OBJEXT) \
+	midisliderbase_moc.$(OBJEXT) midiwidget_moc.$(OBJEXT) \
+	modularsynth_moc.$(OBJEXT) module_moc.$(OBJEXT) \
+	port_moc.$(OBJEXT) port_popup_moc.$(OBJEXT) \
+	prefwidget_moc.$(OBJEXT) textedit_moc.$(OBJEXT)
 vamps_OBJECTS = $(am_vamps_OBJECTS) $(nodist_vamps_OBJECTS)
 vamps_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_@AM_V@)
@@ -369,6 +370,7 @@ nodist_vamps_SOURCES = \
 	m_vca_moc.cpp \
 	m_vcf_moc.cpp \
 	m_vco_moc.cpp \
+	m_fsin_moc.cpp \
 	m_inv_moc.cpp \
 	mainwindow_moc.cpp \
 	midicheckbox_moc.cpp \
@@ -411,6 +413,7 @@ vamps_SOURCES = \
 	m_vca.cpp \
 	m_vcf.cpp \
 	m_vco.cpp \
+	m_fsin.cpp \
 	m_inv.cpp \
 	main.cpp \
 	mainwindow.cpp \
@@ -461,6 +464,7 @@ noinst_HEADERS = \
 	m_vca.h \
 	m_vcf.h \
 	m_vco.h \
+	m_fsin.h \
 	m_inv.h \
 	macros.h \
 	main.h \
@@ -634,6 +638,8 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/m_advmcv_moc.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/m_env.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/m_env_moc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/m_fsin.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/m_fsin_moc.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/m_inv.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/m_inv_moc.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/m_lfo.Po@am__quote@
